@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical"
+    tools:context=".WatchAlarm">
+
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="365dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:srcCompat="@drawable/backbtn"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/titletv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="-43dp"
+        android:fontFamily="@font/pretendard_medium"
+        android:text="알림"
+        android:textColor="#111111"
+        android:textSize="27dp" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Motive Watch를 착용하고 있는 경우 알림이 표시됩니다. 사용자가 Mo:tive 앱을 사용 중인 경우에는 Motive Watch에서 알림이 표시되지 않습니다."
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/pretendard_regular"
+        android:textSize="16dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="#111111"/>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/liner1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="알림 표시"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_medium"
+            android:textColor="#111111"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"/>
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="6dp"
+            android:minHeight="48dp"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track_selector" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="읽지 않은 알림이 있는 경우 시계 페이스 상단에 빨간 점이 표시되며, 아래로 쓸어내려서 알림을 볼 수 있습니다."
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/pretendard_regular"
+        android:textSize="16dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="#111111"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="알림 관련 개인정보 보호"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/pretendard_regular"
+        android:textSize="16dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="#111111"/>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/liner1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="잠겨 있을 때 요약 보기"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_medium"
+            android:textColor="#111111"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"/>
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="6dp"
+            android:minHeight="48dp"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track_selector" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Motive Watch는 잠겨 있을 때 알림 요약 또는 잠깐 보기로 표시할 수 있습니다. 일반적으로 앱 아이콘, 이름 및 간략한 헤드라인이 표시됩니다."
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/pretendard_regular"
+        android:textSize="16dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="#111111"/>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/liner1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="탭하여 전체 알림 보기"
+            android:textSize="18sp"
+            android:fontFamily="@font/pretendard_medium"
+            android:textColor="#111111"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"/>
+
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="6dp"
+            android:minHeight="48dp"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track_selector" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Motive Watch는 탭할 때까지 요약 뒤에 있는 알림의 전체 세부사항을 가릴 수 있습니다."
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/pretendard_regular"
+        android:textSize="16dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="#111111"/>
+
+</LinearLayout>
